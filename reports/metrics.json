@@ -1,0 +1,96 @@
+{
+  "total_requests": 800,
+  "availability": 0.9925,
+  "error_rate": 0.0075,
+  "latency_p50_ms": 0.34,
+  "latency_p95_ms": 310.77,
+  "latency_p99_ms": 498.11,
+  "fallback_success_rate": 0.9504,
+  "cache_hit_rate": 0.7438,
+  "circuit_open_count": 3,
+  "recovery_time_ms": 3398.1763124465942,
+  "estimated_cost": 0.087298,
+  "estimated_cost_saved": 0.595,
+  "scenarios": {
+    "primary_timeout_100": "pass",
+    "primary_flaky_50": "pass",
+    "all_healthy": "pass",
+    "cache_stale_candidate": "pass"
+  },
+  "scenario_details": {
+    "primary_timeout_100": {
+      "availability": 0.99,
+      "error_rate": 0.01,
+      "fallback_success_rate": 0.9583,
+      "cache_hit_rate": 0.76,
+      "circuit_open_count": 1,
+      "recovery_time_ms": 3776.049852371216
+    },
+    "primary_flaky_50": {
+      "availability": 0.98,
+      "error_rate": 0.02,
+      "fallback_success_rate": 0.9245,
+      "cache_hit_rate": 0.71,
+      "circuit_open_count": 1,
+      "recovery_time_ms": 4008.8374614715576
+    },
+    "all_healthy": {
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.745,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null
+    },
+    "cache_stale_candidate": {
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "fallback_success_rate": 1.0,
+      "cache_hit_rate": 0.76,
+      "circuit_open_count": 1,
+      "recovery_time_ms": 2903.9089679718018
+    }
+  },
+  "cache_comparison": {
+    "without_cache": {
+      "total_requests": 200,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 214.57,
+      "latency_p95_ms": 238.41,
+      "latency_p99_ms": 240.27,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.0,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.11688,
+      "estimated_cost_saved": 0.0,
+      "scenarios": {},
+      "scenario_details": {},
+      "cache_comparison": {}
+    },
+    "with_cache": {
+      "total_requests": 200,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 0.27,
+      "latency_p95_ms": 221.91,
+      "latency_p99_ms": 237.28,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.735,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.03066,
+      "estimated_cost_saved": 0.147,
+      "scenarios": {},
+      "scenario_details": {},
+      "cache_comparison": {}
+    },
+    "delta": {
+      "latency_p50_ms": -214.3,
+      "latency_p95_ms": -16.5,
+      "estimated_cost": -0.08622,
+      "cache_hit_rate": 0.735
+    }
+  }
+}
