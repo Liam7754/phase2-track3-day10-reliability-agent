@@ -31,7 +31,7 @@ Strong students should complete the core path in about 2 hours and use the extra
 ## Quickstart
 
 ```bash
-python -m venv .venv
+python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
 
